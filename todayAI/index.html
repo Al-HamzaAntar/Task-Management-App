@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today - Manage Your Day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TODAY</h1>
+    <form id="taskForm">
+      <label for="taskName">Task Name:</label>
+      <input type="text" id="taskName" placeholder="Enter task name" required>
+      
+      <label for="taskHours">Hours:</label>
+      <input type="number" id="taskHours" min="0" max="24" placeholder="Hours" required>
+      
+      <label for="taskMinutes">Minutes:</label>
+      <input type="number" id="taskMinutes" min="0" max="59" placeholder="Minutes" required>
+      
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div id="remainingTime" style="margin-top: 10px; font-weight: bold;">Remaining time: 24 hours</div>
+
+    <h2>Your Tasks</h2>
+    <div id="taskList">
+      <!-- Task list will appear here -->
+    </div>
+    
+    <button id="finishButton" style="display: none;">Finish 24 Hours</button>
+    <button id="deleteAllButton" style="margin-top: 20px;">Delete All Tasks</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
